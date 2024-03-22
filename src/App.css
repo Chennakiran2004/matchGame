@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  height: 100%;
+  background-size: cover;
+}
+
+.content-div-container {
+  display: flex;
+  justify-content: center;
+}
+
+.responsive-container {
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .responsive-container {
+    width: 65%;
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.guess-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.tabs-list-container {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: 30px;
+}
+.images-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .images-list {
+    gap: 10px;
+  }
+}
+
+.score-card-main-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
